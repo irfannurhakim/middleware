@@ -1,4 +1,4 @@
-package nfmiddleware
+package middleware
 
 import (
 	"bytes"
