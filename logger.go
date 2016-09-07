@@ -20,6 +20,8 @@ type (
 	LoggerConfig struct {
 		// Log format which can be constructed using the following tags:
 		//
+		// - log level
+		// - service name
 		// - time_rfc3339
 		// - id (Request ID - Not implemented)
 		// - remote_ip
