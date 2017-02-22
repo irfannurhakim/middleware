@@ -60,8 +60,8 @@ var (
 	// DefaultLoggerConfig is the default Logger middleware config.
 	DefaultLoggerConfig = LoggerConfig{
 		Skipper: defaultSkipper,
-		Format: `{"level":"${level}","time":"${time_rfc3339}","tenant_id":"${tenant_id}","app":"${service_name}",` +
-			`"type":"${app_type}","remote_ip":"${remote_ip}","host":"${host}",` +
+		Format: `{"level":"${level}","time":"${time_rfc3339}","tenant_id":"${tenant_id}","app":"${app}",` +
+			`"type":"${type}","remote_ip":"${remote_ip}","host":"${host}",` +
 			`"method":"${method}","uri":"${uri}","status":${status}, "latency":${latency},` +
 			`"latency_human":"${latency_human}","bytes_in":${bytes_in},` +
 			`"bytes_out":${bytes_out}}` + "\n",
@@ -126,9 +126,9 @@ func LoggerWithConfig(config LoggerConfig, svcName string, svcType string) echo.
 					return w.Write([]byte(time.Now().Format(time.RFC3339)))
 				case "tenant_id":
 					return w.Write([]byte(tenantID))
-				case "service_name":
+				case "app":
 					return w.Write([]byte(svcName))
-				case "service_type":
+				case "type":
 					return w.Write([]byte(svcType))
 				case "remote_ip":
 					ra := c.RealIP()
