@@ -1,0 +1,11 @@
+package: github.com/irfannurhakim/middleware
+import:
+- package: github.com/labstack/echo
+  version: ^3.0.3
+- package: github.com/labstack/gommon
+  version: ^0.1.0
+  subpackages:
+  - color
+- package: github.com/mattn/go-isatty
+  version: ^0.0.1
+- package: github.com/valyala/fasttemplate
