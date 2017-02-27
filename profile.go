@@ -10,7 +10,7 @@ import (
 
 // ResponseMessage is
 type ResponseMessage struct {
-	Data models.UserProfile `json:"data"`
+	Data models.User `json:"data"`
 }
 
 // Profile is
