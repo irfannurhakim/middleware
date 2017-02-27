@@ -1,6 +1,10 @@
-hash: c53f23764a7a6d0ce2c56f1ec1fc111b560a4b48ce6b060dca0b0beaa4f272c5
-updated: 2017-02-22T15:14:38.113320087+07:00
+hash: ac6545fa6ea6798945269049f9ea39c8ba6f67d899510e705f781905b1dff3a3
+updated: 2017-02-27T17:42:15.521117518+07:00
 imports:
+- name: github.com/irfannurhakim/goreq
+  version: 847b8f7df59056ba15dd20ad7032be516addb6e7
+- name: github.com/irfannurhakim/models
+  version: 432b004af12c072871adbc82f8c854b116980036
 - name: github.com/labstack/echo
   version: 8d504c1b699c757b267255c53b3e5219f9974abc
 - name: github.com/labstack/gommon
@@ -13,23 +17,23 @@ imports:
 - name: github.com/mattn/go-isatty
   version: 3a115632dcd687f9c8cd01679c83a06a0e21c1f3
 - name: github.com/tylerb/graceful
-  version: 4654dfbb6ad53cb5e27f37d99b02e16c1872fbbb
+  version: d72b0151351a13d0421b763b88f791469c4f5dc7
 - name: github.com/valyala/bytebufferpool
   version: e746df99fe4a3986f4d4f79e13c1e0117ce9c2f7
 - name: github.com/valyala/fasttemplate
-  version: d090d65668a286d9a180d43a19dfdc5dcad8fe88
+  version: dcecefd839c4193db0d35b88ec65b4c12d360ab0
 - name: golang.org/x/crypto
   version: 453249f01cfeb54c3d549ddb75ff152ca243f9d8
   subpackages:
   - acme
   - acme/autocert
 - name: golang.org/x/net
-  version: 6b27048ae5e6ad1ef927e72e437531493de612fe
+  version: 10c134ea0df15f7e34d789338c7a2d76cc7a3ab9
   subpackages:
   - context
   - context/ctxhttp
 - name: golang.org/x/sys
-  version: 075e574b89e4c2d22f2286a7e2b919519c6f3547
+  version: e4594059fe4cde2daf423055a596c2cd1e6c9adf
   subpackages:
   - unix
 testImports: []

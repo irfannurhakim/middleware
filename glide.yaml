@@ -9,3 +9,5 @@ import:
 - package: github.com/mattn/go-isatty
   version: ^0.0.1
 - package: github.com/valyala/fasttemplate
+- package: github.com/irfannurhakim/models
+  version: ^1.2.1
